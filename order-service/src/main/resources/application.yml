@@ -1,9 +1,10 @@
+
 server:
   port: 0
 
 spring:
   application:
-    name: user-service
+    name: order-service
   h2:
     console:
       enabled: true
@@ -23,14 +24,8 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
 
-greeting:
-  message: Welcome to the Simple E-Commerce.
-
 
 logging:
   level:
-    com.example.userservice: DEBUG
+    com.example.orderservice: DEBUG
 
-token:
-  expiration_time: 86400000
-  secret: user_token
